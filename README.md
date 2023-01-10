@@ -10,7 +10,7 @@ I need to parse this file to get the passwords. Following are the steps that I t
   3. Split the characters at ':' to get the password at the second index.
 Since this dump has the password stored in plaintext, it is easiest to retrieve. I had to parse the dump. The result is in **dump_yahoo.txt**.
 
-## Dump 2: LinikedIn
+## Dump 2: LinkedIn
 
 The second file is from the LinkedIn leak. The name of the file is 'SHA1.txt'. On examination, I can see that the file has 40 hexadecimal digits and 160bits SHA1 hashes. Though the SHA1 is a cryptographically broken algorithm, it will take me months to crack it. Hence, I used a dictionary of the most common passwords to match the list's passwords.
 I used two different dictionaries - the one obtained from the above yahoo plaintext word list and the second, rockyou.txt word list, which is the most common word list comprising a massive collection of leaked passwords.
